@@ -7,6 +7,7 @@
 
 body {
   font-family: var (--default-font-family);
+  background-color: var(--secondary-color);
 }
 
 h1,
@@ -85,9 +86,10 @@ p {
 }
 .my-photo {
   width: 360px;
-  padding: 10px;
+  padding: 10px 18px;
   border-radius: 60%;
   border-style: outset;
+  border-color: var(--branding-color);
 }
 .btn-branding {
   background: var(--branding-color);
@@ -139,7 +141,33 @@ nav li.active a {
 }
 
 nav a :hover {
-  color: var (--branding-color);
+  color: #3aa8fd;
+}
+
+footer {
+  margin: 60px 0;
+}
+footer .email-link {
+  text-decoration: none;
+  color: var(--branding-color);
+  font-size: 24px;
+  text-align: center;
+}
+footer .email-link:hover {
+  color: #3aa8fd;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background-color: #dea4d1;
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--branding-color);
 }
 
 @media (max-width: 900px) {
